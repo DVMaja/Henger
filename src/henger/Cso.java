@@ -15,6 +15,11 @@ public class Cso extends TomorHenger {
     }
 
     @Override
+    public double terfogat() {
+        return 2.0;
+    }
+
+    @Override
     public String toString() {
         String eredeti = super.toString();
         return eredeti + "Cso{" + "falvastagsag=" + falvastagsag + '}';
