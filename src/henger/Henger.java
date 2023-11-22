@@ -2,12 +2,13 @@ package henger;
 
 public class Henger {
 
-    private static int hengerDarab;
+    private static int hengerDarab = 0;
     private double sugar, magassag;
 
-    public Henger(double sugar, double magassag) {
+    public Henger(double sugar, double magassag) {        
         this.sugar = sugar;
         this.magassag = magassag;
+        hengerDarab++;
     }
 
     public static int getHengerDarab() {
@@ -23,7 +24,7 @@ public class Henger {
     }
 
     public double terfogat() {
-        return 1.0;
+        return 1.0;//r2 pi * magasság
     }
 
     @Override

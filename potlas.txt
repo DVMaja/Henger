@@ -1,0 +1,2 @@
+overridal jól generálni az átírást
+hash code talán
