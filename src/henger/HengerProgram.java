@@ -21,7 +21,7 @@ public class HengerProgram {
         for (Henger h : hengerek) {
             System.out.println(h);
         }
-        
+
         int db = Henger.getHengerDarab();
         double atlagV = atlagTerfogat();
         double csovekSulya = csovekSulya();
@@ -31,12 +31,21 @@ public class HengerProgram {
     }
 
     public double atlagTerfogat() {
-        
-        return 1.0;
+        double osszT = 0;
+        for (Henger h : hengerek) {
+            osszT += h.terfogat();
+        }
+        return osszT /= Henger.getHengerDarab();
     }
 
     public double csovekSulya() {
-        return 1.0;
+        double osszSuly = 0;
+        for (Henger h : hengerek) {
+            if (h instanceof Cso) {
+                osszSuly += ((Cso) h).suly();
+            }
+        }
+        return osszSuly;
     }
 
     private void lista() {
@@ -46,7 +55,6 @@ public class HengerProgram {
         hengerek[2] = new Cso(1, 1, 5);
         hengerek[3] = new Cso(1, 1, 1);
 
-        
     }
 //pont erre hozták létre a collectionsba
 }
