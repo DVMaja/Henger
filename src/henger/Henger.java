@@ -23,8 +23,8 @@ public class Henger {
         return magassag;
     }
 
-    public double terfogat() {
-        return 1.0;//r2 pi * magasság
+    public double terfogat() {        
+        return Math.pow(sugar, 2)*3.14*magassag;//r2 pi * magasság
     }
 
     @Override
