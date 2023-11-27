@@ -21,6 +21,7 @@ public class HengerProgram {
     }
 
     public void atlagTerfogat() {
+        
     }
 
     public void csovekSulya() {

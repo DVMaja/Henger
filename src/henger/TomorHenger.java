@@ -5,10 +5,10 @@ public class TomorHenger extends Henger {
     private double fajsuly;
 
     public TomorHenger(double sugar, double magassag) {
-        super(sugar, magassag);//1
+        this(sugar, magassag, 1);
     }
 
-    public TomorHenger(double fajsuly, double sugar, double magassag) {
+    public TomorHenger(double sugar, double magassag, double fajsuly) {
         super(sugar, magassag);
         this.fajsuly = fajsuly;
     }
