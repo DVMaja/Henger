@@ -1,3 +1,3 @@
 # HengerProgram
-https://github.com/DVMaja/hp_DreilingerM.git
+https://github.com/DVMaja/hp_Dreilinger.git
 ## Dreilinger Vanessza Maja
