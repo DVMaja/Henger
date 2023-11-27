@@ -4,10 +4,8 @@ public class Henger {
 
     private static int hengerDarab = 0;
     private double sugar, magassag;
-    
-    
 
-    public Henger(double sugar, double magassag) {        
+    public Henger(double sugar, double magassag) {
         this.sugar = sugar;
         this.magassag = magassag;
         hengerDarab++;
@@ -25,7 +23,7 @@ public class Henger {
         return magassag;
     }
 
-    public double terfogat() {        
+    public double terfogat() {
         return Math.pow(sugar, 2) * 3.14 * magassag;
     }
 

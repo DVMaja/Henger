@@ -1,11 +1,11 @@
 package henger;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class HengerProgram {
 
-    //private List[] hengerek = new List[4];//4 dbnak kell lennie
     private Henger[] hengerek;
+    //private  ArrayList<Henger> hengerek;// Így lesz a legjobb
 
     public HengerProgram() {
     }
@@ -16,15 +16,22 @@ public class HengerProgram {
     }
 
     private void run() {
+        System.out.println("A programben lévő Hengerek: ");
         lista();
+        for (Henger h : hengerek) {
+            System.out.println(h);
+        }
+        
         int db = Henger.getHengerDarab();
         double atlagV = atlagTerfogat();
-
-        csovekSulya();
-
+        double csovekSulya = csovekSulya();
+        System.out.printf("%17s %d db\n", "A hengerek száma: ", db);
+        System.out.printf("%17s %f\n", "Átlag térfogatuk: ", atlagV);
+        System.out.printf("%17s %f\n", "A csövek súlya: ", csovekSulya);
     }
 
     public double atlagTerfogat() {
+        
         return 1.0;
     }
 
@@ -36,12 +43,10 @@ public class HengerProgram {
         hengerek = new Henger[4];
         hengerek[0] = new Henger(1, 1);
         hengerek[1] = new TomorHenger(1, 1);
-        //hengerek[2] = new Cso(1, 1, 5);
-//        hengerek[3] = new Cso(1, 1, 1);
+        hengerek[2] = new Cso(1, 1, 5);
+        hengerek[3] = new Cso(1, 1, 1);
 
-        for (Henger h : hengerek) {
-            System.out.println(h);
-        }
+        
     }
-
+//pont erre hozták létre a collectionsba
 }
