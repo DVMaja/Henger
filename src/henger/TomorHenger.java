@@ -17,8 +17,13 @@ public class TomorHenger extends Henger {
         return fajsuly;
     }
 
+    @Override
+    public double terfogat() {
+        return super.terfogat();
+    }
+
     public double suly() {
-        return 1.0;//faj* térf
+        return terfogat() * fajsuly;
     }
 
     @Override
