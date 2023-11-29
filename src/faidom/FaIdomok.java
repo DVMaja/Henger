@@ -6,10 +6,12 @@ public class FaIdomok {
     //private final List<> idomok = new List<4>;
 
     public FaIdomok() {
+        //System.out.println("Faifódomok");
         run();
     }
 
     public void run() {
+        
         minV();
         maxV();
         OsszSuly();
