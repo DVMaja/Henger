@@ -15,7 +15,8 @@ public class Gomb extends FaIdom {
 
     @Override
     public String toString() {
-        return "Gömb{" + "sugár= " + sugar + " térfogat= " + terfogat() + "súly= " + suly() + '}';
+        String eredeti = super.toString();
+        return eredeti + "Gömb{" + "sugár= " + sugar + " térfogat= " + terfogat() + "súly= " + suly() + '}';
     }
 
 }

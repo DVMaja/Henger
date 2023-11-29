@@ -11,6 +11,8 @@ abstract public class FaIdom {
     }
 
     @Override
-    public abstract String toString();
+    public String toString(){
+        return "Faidom:  ";
+    };
 
 }

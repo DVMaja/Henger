@@ -18,7 +18,8 @@ public class Hasab extends FaIdom {
 
     @Override
     public String toString() {
-        return "Hasáb{" + "a= " + a + "b= " + b + "magasság= " + magassag
+        String eredeti = super.toString();
+        return eredeti + "Hasáb{" + "a= " + a + "b= " + b + "magasság= " + magassag
                 + "\ntérfogat= " + terfogat() + "súly= " + suly() + '}';
     }
 
