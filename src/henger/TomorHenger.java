@@ -15,15 +15,10 @@ public class TomorHenger extends Henger {
 
     public double getFajsuly() {
         return fajsuly;
-    }
-
-    @Override
-    public double terfogat() {
-        return super.terfogat();
-    }
+    }    
 
     public double suly() {
-        return terfogat() * fajsuly;
+        return super.terfogat() * fajsuly;
     }
 
     @Override

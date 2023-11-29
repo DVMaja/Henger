@@ -18,11 +18,15 @@ public class Cso extends TomorHenger {
         this.falvastagsag = falvastagsag;
     }
 
+    public double getFalvastagsag() {
+        return falvastagsag;
+    }
+
     @Override
     public double terfogat() {
-        double eredetiT = super.terfogat();
-        double ujT = super.getSugar() - falvastagsag;
-        return eredetiT - ujT;
+        Henger belso = new Henger(getSugar() - falvastagsag, getMagassag());
+
+        return super.terfogat() - belso.terfogat();
     }
 
     @Override

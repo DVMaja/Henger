@@ -35,7 +35,7 @@ public class HengerProgram {
         for (Henger h : hengerek) {
             osszT += h.terfogat();
         }
-        return osszT /= Henger.getHengerDarab();
+        return osszT / Henger.getHengerDarab();
     }
 
     public double csovekSulya() {
